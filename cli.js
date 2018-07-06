@@ -87,6 +87,13 @@ async function startAsync () {
       .command('submit', 'submit a hash to be anchored (3x Nodes default)', async (yargs) => {
         let argv = yargs
           .usage('Usage: submit [options] (<hash> <hash>... | <hash>,<hash>,... )')
+          .option('f', {
+            alias: 'file',
+            demandOption: false,
+            requiresArg: false,
+            description: 'hash the contents of a file or files',
+            type: 'boolean'
+          })
           .string('_')
           .argv
         argv.server = await parseBaseUriAsync(argv.server)
