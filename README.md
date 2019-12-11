@@ -1,6 +1,6 @@
 # Important Notice
 
-This software is deprecated and is no longer supported. 
+This software is deprecated and is no longer supported.
 
 # Chainpoint CLI
 
